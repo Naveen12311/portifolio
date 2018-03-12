@@ -1,0 +1,117 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+</head>
+<style>
+	
+	.flex{
+		margin: 20px;
+		background: #ccc;
+		flex-wrap: wrap;
+		display: flex;
+		display: -webkit-flex;	
+	}
+
+
+	.item{
+		font-size: 2em;
+		width: 300px;
+    	height: 300px;
+        text-align: center;
+        
+	}
+
+	.flex1{
+		background: lightblue;
+
+	}
+
+	.flex2{
+		background: lightgreen;
+	}
+
+	.flex3{
+		background: yellow;
+		
+	}
+
+	.flex4{
+		background: lightpink;
+		
+	}
+
+	@media screen and (min-width: 1000px) and (max-width: 1250px){
+
+		.flex1{
+			width:33.3%;
+		}
+		 .flex2{
+        	width: 33.3% !important;
+        }
+        .flex3{
+        	width:33.3% !important;
+        }
+         .flex4{
+        	width: 100% !important;
+        }
+	}
+
+		@media screen and (min-width: 700px) and (max-width: 1000px){
+
+		.flex1{
+			width:50%;
+		}
+		 .flex2{
+        	width: 50% !important;
+        }
+        .flex3{
+        	width:50% !important;
+        }
+         .flex4{
+        	width: 50% !important;
+        }
+	}
+
+
+	@media screen and (max-width: 700px) {
+		.flex1 {
+			width: 100%;
+			height: 400px;
+			
+		}
+		 .flex2{
+        	width: 33.1% !important;
+        }
+        .flex3{
+        	width:33.1% !important;
+        }
+        .flex4{
+        	width: 33.1% !important;
+        }
+	}
+	@media screen and (max-width: 400px){
+		.flex1 {
+			width: 100% !important;
+		}
+		 .flex2{
+        	width: 100% !important;
+        }
+        .flex3{
+        	width:100% !important;
+        }
+        .flex4{
+        	width:100% !important;
+        }
+	}
+</style>
+<body>
+	<div class="flex">
+		
+		<div class="item flex1">Welcome</div>
+		<div class="item flex2">To</div>
+		<div class="item flex3">Naveen"s</div>
+		<div class="item flex4">FlexBox</div>
+	</div>
+</body>
+</html>
